@@ -1,35 +1,46 @@
+<!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>mov-cli</title>
-        <link rel="stylesheet" href="css/404.css">
-        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/output.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <div class="topbar">
-            <div class="topbar-container">
-                <a href="https://mov-cli.github.io/">
-                    <img class="logo" src="images/mov-cli.png" alt="logo">
-                </a>
-                <nav>
-                    <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="download">Download</a></li>
-                    <li><a href="https://github.com/mov-cli/mov-cli">GitHub</a></li>
-                   </ul>
-                </nav>
+    <body class="bg-sky-900 text-white" style="font-family: 'Space Grotesk';">
+        <nav class="bg-white dark:bg-sky-700 fixed w-full z-20 top-0 left-0 border-b dark:border-gray-600">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="/" class="flex items-center">
+                <img src="images/mov-transparent.svg" class="h-8 mr-3" alt="mov-cli logo">
+            </a>
+            <div class="flex md:order-2">
+                <button type="button" onclick="window.location.href='https://github.com/mov-cli/mov-cli#getting-started'" class="text-white bg-blue-900 hover:bg-sky-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-900 dark:hover:bg-sky-500 dark:focus:ring-blue-800 ease-in duration-150">Install</button>
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
             </div>
-        </div>
-        <div class="container">
-            <div class="404">
-                <div class="error">
-                    <h1>404 Error</h1>
-                    <p>Page not Found</p>
-                </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+              <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-sky-700 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-sky-700 md:dark:bg-sky-700 dark:border-gray-700">
+                <li>
+                  <a href="/" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                </li>
+                <li>
+                  <a href="/about" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                </li>
+                <li>
+                  <a href="/developers" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Developers</a>
+                </li>
+              </ul>
             </div>
-        </div>
+          </nav>
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+            <a class="font-bold text-5xl">404</a>
+            <br>
+            <br>
+            <a class="font-bold text-lg">The site was not found.</a>
+          </div>
     </body>
 </html>
-

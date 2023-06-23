@@ -30,6 +30,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Build Tailwind
+        run: npm install tailwindcss && npx tailwindcss -i ./css/input.css -o ./css/output.css --minify
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact

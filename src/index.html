@@ -3,17 +3,33 @@
         <title>mov-cli</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/static/output.css">
+        <link rel="stylesheet" href="./static/output.css">
+        <link rel="stylesheet" href="./static/gradient_bg.css">
     </head>
 
-    <body>
+    <body class="bg-neutral-950 selection:bg-gray-800 font-spacegrotesk font-medium text-white">
+        <div class="absolute flex place-content-center items-center overflow-hidden inset-0">
+            <div class="gradient"></div>
+        </div>
+
         <nav id="nav-placeholder"></nav>
 
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-            <img class="w-52 lg:w-3/4 mx-auto" src="/static/mov-transparent.svg" width="100">
-            <h2 class="sm:text-sm text-nowrap md:text-lg lg:text-2xl">
-                Watch <strong class="text-yellow-300">everything</strong> from your terminal.
+            <img style="filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.5));" class="select-none w-72 lg:w-96 mx-auto -my-8 lg:-my-10" src="./static/mov-transparent.svg">
+            <h2 style="text-shadow: black 1px 1px 4px;" class="my-5 lg:my-7 sm:text-sm text-nowrap md:text-lg lg:text-2xl">
+                Watch 
+                <a class="text-blue-300 hover:text-blue-400 font-extrabold transition-colors duration-300" href="https://github.com/topics/mov-cli-plugin">
+                    everything 
+                </a>
+                from your terminal.
             </h2>
+
+            <a href="https://github.com/mov-cli/mov-cli">
+                <button class="select-none bg-slate-100 text-stone-950 px-3 py-2
+                    hover:scale-110 transition-all duration-300 rounded-xl text-xl lg:text-2xl font-extrabold">
+                    Install
+                </button>
+            </a>
         </div>
 
         <footer id="footer-placeholder"></footer>
@@ -21,14 +37,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
         <script>
-            $.get("templates/nav.html", function(data){
+            $.get("./templates/nav.html", function(data){
                 $("#nav-placeholder").replaceWith(data);
             });
 
-            $.get("templates/footer.html", function(data){
+            $.get("./templates/footer.html", function(data){
                 $("#footer-placeholder").replaceWith(data);
             });
         </script>
-        
+
     </body>
 </html>

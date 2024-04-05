@@ -1,0 +1,32 @@
+/* 
+Totally not stolen from: https://codepen.io/Jeromche/pen/KKQrGgP 
+
+Credit: Wil van der Tuin
+*/
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.gradient {
+    --size: 250px;
+    --speed: 40s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+    width: var(--size);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(rgba(147, 197, 253, 0.85), rgb(31, 41, 55));
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+}
+
+@media (min-width: 720px) {
+    .gradient {
+        --size: 500px;
+    }
+}

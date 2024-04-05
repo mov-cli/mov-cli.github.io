@@ -32,8 +32,4 @@
     src: url(./font/SpaceGrotesk-Bold.ttf);
 }
 
-@layer base {
-    body {
-        @apply bg-aGrey-800 font-spacegrotesk font-medium text-white;
-    }
-}
+@layer base {}

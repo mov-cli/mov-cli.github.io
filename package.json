@@ -1,0 +1,6 @@
+{
+    "name": "mov-cli-github-io",
+    "dependencies": {
+        "tailwindcss": "^3.4.1"
+    }
+}

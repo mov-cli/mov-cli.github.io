@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>mov-cli: 404</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/output.css">
+    </head>
+
+    <body>
+        <nav id="nav-placeholder"></nav>
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center hover:text-red-700 ease-in-out duration-300">
+            <h2 class="text-lg text-nowrap md:text-xl lg:text-5xl">404</h1>
+            <h2 class="sm:text-sm text-nowrap md:text-lg lg:text-2xl">
+                Page not found
+            </h2>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script>
+            $.get("templates/nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
+        
+    </body>
+</html>

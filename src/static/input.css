@@ -35,4 +35,15 @@
 }
 
 
-@layer base {}
+
+@layer components {
+    .swiper-slide {
+        @apply bg-neutral-950 selection:bg-gray-800 font-spacegrotesk font-medium text-white;
+    }
+}
+
+@layer base {
+    nav {
+        @apply selection:bg-gray-800 font-spacegrotesk font-medium text-white;
+    }
+}

@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>mov-cli</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./static/output.css">
+        <link rel="stylesheet" href="./static/gradient_bg.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    </head>
+
+    <body class="bg-neutral-950 selection:bg-gray-800 font-spacegrotesk font-medium text-white">
+        <div class="absolute flex place-content-center items-center overflow-hidden inset-0">
+            <div class="gradient"></div>
+        </div>
+
+        <nav id="nav-placeholder"></nav>
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+            <div class="hidden lg:block font-bold text-5xl">Developers</div>
+
+            <div class="flex md:flex-row flex-col mt-12 md:gap-12 gap-6">
+                <a href="https://github.com/Poseidon444">
+                    <img src="https://avatars.githubusercontent.com/u/87462580" class="rounded-full mx-auto" width="100">
+                    <p class="mt-5">Poseidon444</p>
+                    <p>Author</p>
+                </a>
+
+                <a href="https://github.com/r3tr0ananas">
+                    <img src="https://avatars.githubusercontent.com/u/132799819" class="rounded-full mx-auto" width="100">
+                    <p class="mt-5">R3tr0Ananas</p>
+                    <p>Maintainer</p>
+                </a>
+
+                <a href="https://github.com/THEGOLDENPRO">
+                    <img src="https://avatars.githubusercontent.com/u/66202304" class="rounded-full mx-auto" width="100">
+                    <p class="mt-5">THEGOLDENPRO</p>
+                    <p>Maintainer</p>
+                </a>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script>
+            $.get("./templates/nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
+
+    </body>
+</html>
